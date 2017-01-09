@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <title>{% block title %}Welcome!{% endblock %}</title>
+            <link rel="icon" type="image/x-icon" href="{{ asset('favicon.ico') }}" />
+            <link rel="stylesheet" href="{{ asset('../vendor/twbs/bootstrap/dist/css/bootstrap.min.css') }}" >
+    </head>
+    <body>
+        <div class="container-fluid">
+            <div>
+                <h1 class="text-center">Welcome!</h1>
+            </div>
+            {% include 'nav.html.twig'%}
+            {% block body %}
+                <div>
+                    <h2 class="text-center">Accueil</h2>
+                    <p>
+                        
+                    </p>
+                </div>
+            {% endblock %}
+            {% block javascripts %}{% endblock %}
+        </div>
+    </body>
+</html>
